@@ -47,7 +47,7 @@ header nav a:hover {
 
 /* Hero Bölümü */
 .hero {
-    background: linear-gradient(to right, #ff7f50, #ff6f61);
+    background: linear-gradient(to right, #D16002, #ff6f61);
     color: white;
     text-align: center;
     padding: 80px 20px;
@@ -359,7 +359,7 @@ body {
 }
 
 header {
-    background-color: #ff6f61;
+    background-color: #D16002;
     color: white;
     padding: 15px 10px;
     text-align: center;
@@ -371,6 +371,7 @@ header h1 a {
     text-decoration: none;
     font-size: 2em;
     font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 header nav {
@@ -493,4 +494,74 @@ footer p {
         margin: 0 auto;
     }
 }
+/* Menü ve Sipariş Özeti Konteyneri */
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+}
 
+/* Menü Kısmı */
+#menu {
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Sipariş Özeti Kısmı */
+.order-summary {
+    flex: 1;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    position: sticky;
+    top: 20px;
+}
+
+.order-summary h3 {
+    font-size: 1.5em;
+    color: #ff6f61;
+    margin-bottom: 10px;
+}
+
+.order-summary ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+.order-summary ul li {
+    font-size: 1em;
+    margin: 5px 0;
+    margin: 0 0 10px 0;
+}
+
+#total-price {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.checkout-btn {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.checkout-btn:hover {
+    background-color: #e05850;
+}
+.hero2{
+    width: 100%;
+}

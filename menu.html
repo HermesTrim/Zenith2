@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menü - Zenith</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1><a href="Restoran.html">Zenith</a></h1>
+        <nav>
+            <a href="Restoran.html">Ana Sayfa</a>
+            <a href="menu.html">Menü</a>
+            <a href="siparis.html">Siparişler</a>
+            <a href="contack.html">İletişim</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Zenith Menü</h2>
+        <p>Sizler için özenle hazırladığımız eşsiz lezzetlerimizi keşfedin!</p>
+        
+        <section id="menu">
+            <div class="menu-item">
+                <img src="kebap.jpg" alt="Adana Kebap">
+                <h3>Adana Kebap</h3>
+                <p>Baharatlı etin eşsiz lezzeti, közde pişmiş domates ve biber ile servis edilir.</p>
+                <span class="price">₺450</span>
+                <button onclick="addToCart('Adana Kebap', 150)">Sipariş Ver</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="pizza.jpeg" alt="Karışık Pizza">
+                <h3>Karışık Pizza</h3>
+                <p>En taze malzemelerle hazırlanan, taş fırında pişmiş çıtır pizza.</p>
+                <span class="price">₺280</span>
+                <button onclick="addToCart('Karışık Pizza', 180)">Sipariş Ver</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="salata.webp" alt="Mevsim Salatası">
+                <h3>Mevsim Salatası</h3>
+                <p>Taze yeşillikler ve nar ekşisi ile hazırlanan hafif bir lezzet.</p>
+                <span class="price">₺100</span>
+                <button onclick="addToCart('Mevsim Salatası', 60)">Sipariş Ver</button>
+            </div>
+
+            <div class="menu-item">
+                <img src="tatlı.jpg" alt="Baklava">
+                <h3>Tatlı</h3>
+                <p>Geleneksel tarife uygun hazırlanan tatlı.</p>
+                <span class="price">₺120</span>
+                <button onclick="addToCart('Baklava', 90)">Sipariş Ver</button>
+            </div>
+        </section>
+        <aside class="order-summary">
+            <h3>Sipariş Özeti</h3>
+            <ul id="cart-items">
+                <li>Sepetiniz boş.</li>
+            </ul>
+            <p id="total-price">Toplam: ₺0</p>
+            <button class="checkout-btn" onclick="checkout()">Siparişi Tamamla</button>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2024 Zenith. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
